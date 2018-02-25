@@ -633,10 +633,6 @@ Wire Wire Line
 Wire Wire Line
 	9300 1600 9300 2000
 Wire Wire Line
-	9300 2000 8400 2000
-Wire Wire Line
-	8700 2000 8700 1700
-Wire Wire Line
 	4100 3300 4100 3750
 Wire Wire Line
 	3600 3300 3600 3750
@@ -920,8 +916,22 @@ F 3 "" H 8400 1750 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	8400 2000 8400 1900
-Connection ~ 8700 2000
 Wire Wire Line
 	8400 1600 8700 1600
 Connection ~ 8700 1600
+Wire Wire Line
+	9300 2000 8700 2000
+Wire Wire Line
+	8700 2000 8700 1700
+$Comp
+L GND #PWR?
+U 1 1 5A92CE06
+P 8400 2000
+F 0 "#PWR?" H 8400 1750 50  0001 C CNN
+F 1 "GND" H 8400 1850 50  0000 C CNN
+F 2 "" H 8400 2000 50  0000 C CNN
+F 3 "" H 8400 2000 50  0000 C CNN
+	1    8400 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
